@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form ve İnputlar</title>
+</head>
+<body>
+
+<form>
+
+	<!-- Html input alanı -->
+
+	<label for="name" >Name:</label>
+	<input type="text" id="name" name="name"> <br>
+
+
+ <label for="email" >Email</label>
+ <input type="email" id="email" name="email">
+
+ <br>
+
+<label for="password">Şifre</label> <br>
+<input type="password" id="password" name="password">
+
+<br>
+
+<label for="date">tarih</label>
+<input type="date" id="date" name="date">
+
+<br>
+
+Cinsiyet <br>
+Kadın
+<input type="radio" name="Cinsiyet" value="female">
+Erkek
+<input type="radio" name="Cinsiyet" value="male">
+
+<br>
+
+hobiler:
+Teknoloji
+<input type="checkbox" name="tech" id="tech">
+Müzik
+<input type="checkbox" name="music" id="music">
+Sanat
+<input type="checkbox" name="art" id="art">
+
+Derece <br>
+
+<select name="derece" id="derece">
+
+<option value="Yükseklisans">Lisans</option> 
+<option value="YüksekLisans">YüksekLisans</option> 
+<option value="Doktora" selected>Doktora</option> 
+<br>
+
+<textarea name="mesajbox" id="mesajbox" rows="10" cols="30" placeholder="mesajınızı yazınız"></textarea>
+
+
+</select>
+
+<br>
+
+
+
+
+<br>
+	<button type="submit"> button gönder</button>
+	<input type="submit" value="gönder">
+
+<input type="reset" value="reset">
+
+
+<button type="reset">button reset</button>
+<br>
+
+
+
+
+</form>
+
+
+
+</body>
+</html>
