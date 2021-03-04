@@ -144,6 +144,7 @@ section .kurslar {
 }
 
 .courses{
+    align-items: center;
     display: flex;
     flex-direction: column;
     padding: 1.5em;
@@ -176,21 +177,126 @@ section .kurslar {
 
 .courses .course .course-info .title{
     letter-spacing: 1.2px;
-    font-weight: 500;
+    font-weight: 800;
     margin-bottom: 0.7em;
 
 }
 
+.courses .course .course-info .description{
+    letter-spacing: 1.2px;
+    margin-bottom: 0.7em;
+    opacity: 0.7;
+
+}
+
+.courses .course .course-info .instructor{
+    font-size: 1.2em ;
+    margin-bottom: 0.7em;
+    opacity: 0.7;
+
+}
+
+.courses .course .course-info .raiting{
+    font-size: 1.2em ;
+    margin-bottom: 0.7em;
+    opacity: 0.7;
+
+}
+
+.iletisim{
+background-color: rgba(10, 56, 117, 0.788);
+  padding: 1.5em;
+  color: white;
+}
+
+footer h4{
+
+    font-size: 2em;
+    text-align: center;
+
+}
+
+.button{
+    background-color: gray;
+    border width: 100%;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 4px 2px;
+}
 
 
-@media(max-width: 500px){
+.form-grup{
+    padding: 0.7em 0 ;
+}
+
+label{
+    display: block;
+}
+
+
+#contact{
+    padding: 1.5em ;
+}
+#contact .iletisim-form{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    overflow: scroll;
+}
+
+.form{
+    width: 100%;
+    padding: 1em;
+    font-size: 1em;
+    resize: none;
+    border-radius: 5px;
+}
+
+.iletisim-form ul{
+    list-style-type: none;
+    
+    display: flex;
+    margin-top: 1.5em;
+    align-self: center;
+    letter-spacing: 1.5em;
+    font-size: 2em;}
+
+    .iletisim-form ul a{
+        color: white;
+    }
+
+
+    .iletisim-form ul a:hover{
+        opacity: 0.5;
+    }
+
+
+    
+        
+
+
+@media(max-width:500px){
     .altaciklama{
-        flex-direction: column;
+        flex-direction:column;
     }
 }
 
 @media(max-width:500px){
     .a1{
-        width:100% ;
+        width: 100%;
+    }
+}
+
+@media(max-width:500px){
+    .course{
+        flex-direction:column;
     }
 }
