@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: rgba(10, 56, 117, 0.788);
+  height: 60px;
+}
+
+.nav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 30px;
+}
+
+.headh1 {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: rgb(116, 120, 165);
+  border-radius: 8px;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: grey;
+}
+
+section div h2 {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 0.3em;
+}
+
+.isim {
+  text-align: center;
+}
+
+section div p {
+  opacity: 0.9;
+  font-style: italic;
+}
+
+section a {
+  text-decoration: none;
+  background-color: rgb(116, 120, 165);
+  margin-top: 1.2em;
+  color: white;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  padding-left: 3.4em;
+  padding-right: 3.4em;
+  border-radius: 5px;
+}
+
+section a:hover {
+  color: rgb(116, 120, 165);
+  background-color: white;
+  border-style: solid;
+  border-width: 0.8px;
+  border-color: rgb(116, 120, 165);
+}
+
+section h3 {
+  text-align: center;
+}
+
+.altelemanlar {
+  background-color: rgba(10, 56, 117, 0.788);
+  padding: 1.5em;
+  color: white;
+}
+
+.altelemanlar h3 {
+  font-size: 2em;
+}
+
+.altelemanlar div article p{
+    color: white;
+    font-style: normal;
+    opacity: 1px;
+}
+
+.altaciklama{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.altelemanlar h4{
+    letter-spacing: 0.8px;
+}
+
+.a1{
+    width: 33%;
+    text-align: center;
+    padding: 0.7em;
+}
+
+.a1:hover{
+    color: pink;
+}
+
+section .kurslar {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#kurslar{
+    color: #333;
+    padding: 1.5em;
+}
+
+.courses{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+}
+
+.courses .course{
+    display: flex;
+    padding: 1em;
+    margin-bottom: 1em;
+
+}
+
+.course-image{
+    margin-right: 1em;
+    position: relative;
+
+}
+
+.course-image span{
+    color: white;
+    background-color: blue;
+    opacity: 0.5;
+    padding: 0.75em;
+    border-radius: 5px;
+    position: absolute;
+    top: -40;
+    left: 0;
+    
+} 
+
+.courses .course .course-info .title{
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    margin-bottom: 0.7em;
+
+}
+
+
+
+@media(max-width: 500px){
+    .altaciklama{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:500px){
+    .a1{
+        width:100% ;
+    }
+}
