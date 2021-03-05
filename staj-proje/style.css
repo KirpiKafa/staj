@@ -5,6 +5,7 @@
 
 .header {
   background-color: rgb(240, 233, 233);
+  width: 100%;
   height: 100px;
   padding: 0 16px;
   color: black;
@@ -113,40 +114,37 @@ header.head-h1 {
 .services h2 {
   font-size: 2em;
   text-align: center;
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-.container-2{
-  background-color: Pink;
+.container-2 {
+  background-color: rgba(255, 192, 203, 0.397);
   color: black;
   width: 700px;
-  height: 500px; 
+  height: 500px;
   display: flex;
-
+  position: relative;
+  left: 33%;
+  margin-top: 150px;
 }
 
-.container-2 .box1{
+.container-2 .box1 {
   height: 100%;
   padding-left: 20px;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-.container-2 .box1 .h1{
+.container-2 .box1 .h1 {
   font-size: 2em;
-  
   font-weight: bold;
   padding-left: 20px;
-  
-  
 }
-.container-2 .box1 p{
+.container-2 .box1 p {
   margin-top: 90px;
-
 }
 
-.container-2 .box1 .button{
+.container-2 .box1 .button {
   text-align: center;
   color: white;
   padding: 10px;
@@ -156,9 +154,79 @@ margin-bottom: 30px;
   margin: 10px;
 }
 
-.container-2 img{
+.container-2 img {
   height: 500px;
 }
 
+.studio-h1 {
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 35px;
+}
 
+.container-3 {
+  background-color: white;
+  width: 700px;
+  height: 500px;
+  display: flex;
+  position: relative;
+  left: 33%;
+}
 
+.container-3 .box2 {
+  text-align: center;
+  background-color: white;
+  width: 287px;
+  height: 33%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(189, 179, 179);
+}
+
+.container-3 img {
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start;
+  height: 500px;
+}
+
+.learn-more {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.learn-more a {
+  border-width: 1px;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  border-style: solid;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.box2 h1 {
+  font-size: 2em;
+}
+
+.box-ici {
+  padding: 2em;
+}
+
+.read {
+  border-width: 1px;
+  color: black;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 5px;
+  display: flex;
+  padding-left: 20px;
+}
+
+.read:hover {
+  opacity: 0.5;
+}
