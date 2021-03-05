@@ -5,13 +5,12 @@
 
 .header {
   background-color: rgb(240, 233, 233);
-  width: 100%;
   height: 100px;
   padding: 0 16px;
   color: black;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 header.head-h1 {
@@ -23,6 +22,7 @@ header.head-h1 {
 }
 
 .navbar ul {
+  display: inline-block;
   list-style-type: none;
 }
 
@@ -232,9 +232,8 @@ header.head-h1 {
   opacity: 0.5px;
 }
 
-.fact{
+.fact {
   margin-top: 80px;
-
 }
 .lower-element {
   padding: 1.5em;
@@ -279,3 +278,57 @@ header.head-h1 {
   font-size: 2.5em;
   font-weight: normal;
 }
+
+.design {
+  text-align: center;
+  font-size: 2em;
+  display: flex;
+}
+
+.interior{
+  padding: 0 16px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.interior ul {
+  list-style-type: none;
+}
+
+.interior ul li {
+  
+  display: inline-block;
+}
+
+.interior div ul li a {
+  color: black;
+  text-decoration: none;
+  margin: 8px;
+}
+
+.interior img{
+flex-direction: column;
+}
+
+
+
+.double{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.double h1{
+  font-size: 8em;
+  text-align: center;
+  align-items: center;
+}
+
+.double-p{
+  width: 33%;
+  opacity: 0.4;
+  
+}
+
+
