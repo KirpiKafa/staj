@@ -159,12 +159,13 @@ header.head-h1 {
 }
 
 .studio-h1 {
-  margin-top: 100px;
+  margin-top: 200px;
   text-align: center;
   margin-bottom: 35px;
 }
 
 .container-3 {
+  margin-top: 50px;
   background-color: white;
   width: 700px;
   height: 500px;
@@ -228,5 +229,53 @@ header.head-h1 {
 }
 
 .read:hover {
-  opacity: 0.5;
+  opacity: 0.5px;
+}
+
+.fact{
+  margin-top: 80px;
+
+}
+.lower-element {
+  padding: 1.5em;
+  color: white;
+}
+
+.lower-element h3 {
+  font-size: 2em;
+}
+
+.lower.element div article p {
+  color: white;
+  font-style: normal;
+  opacity: 1px;
+}
+
+.sub {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lower-element h4 {
+  letter-spacing: 0.8px;
+}
+
+.lower-element {
+  width: 20%;
+  text-align: center;
+  padding: 0.7em;
+  color: black;
+}
+
+.fact h3 {
+  font-weight: bold;
+  margin-left: 300px;
+
+  font-size: 1.8em;
+}
+
+.lower-element h4 {
+  font-size: 2.5em;
+  font-weight: normal;
 }
