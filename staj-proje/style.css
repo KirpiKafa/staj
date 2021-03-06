@@ -285,21 +285,25 @@ header.head-h1 {
   display: flex;
 }
 
-.interior{
+.interior {
   padding: 0 16px;
   color: black;
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 
 .interior ul {
   list-style-type: none;
 }
 
+.interior .design {
+  align-items: center;
+}
+
 .interior ul li {
-  
   display: inline-block;
+  margin-top: 30px;
 }
 
 .interior div ul li a {
@@ -308,27 +312,65 @@ header.head-h1 {
   margin: 8px;
 }
 
-.interior img{
-flex-direction: column;
+.interior-image {
+  margin-top: 30px;
+  margin-left: 38em;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
+.design {
+  display: inline-block;
+  position: relative;
+  margin-top: 5em;
+}
 
-
-.double{
+.double {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.double h1{
-  font-size: 8em;
+.double h1 {
+  font-size: 6em;
   text-align: center;
   align-items: center;
 }
 
-.double-p{
+.double-p {
   width: 33%;
+ margin-bottom: 10em;
   opacity: 0.4;
+}
+
+
+
+
+.footr h4{
+  color:white;
+}
+
+
+.footr {
+  color: white;
+  background-color: black;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  padding: 5em;
+  font-size: 1.5em;
   
 }
+
+.footr ul li {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 1em;
+}
+
+
+
 
 
