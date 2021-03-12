@@ -27,7 +27,8 @@ ul li a {
 nav ul li a:hover {
   background-color: rgb(116, 120, 165);
   border-radius: 8px;
-}
+  
+  }
 
 .image {
   width: 300px;

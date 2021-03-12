@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+.header {
+  border-bottom: 1px solid #ccc;
+  background-color: white;
+  height: 70px;
+  padding: 0 16px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.head-h1 {
+  font-size: 1.5em;
+}
+
+.navbar ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+.navbar ul li a {
+  color: black;
+  text-decoration: none;
+  margin: 8px;
+}
+
+.first-section {
+  margin-top: 8em;
+  margin-bottom: 8em;
+}
+
+.section-h1 {
+  text-align: center;
+  font-weight: 1000;
+  font-size: 30px;
+}
+
+.section-p {
+  text-align: center;
+  font-size: 55px;
+  font-weight: 200;
+}
+
+.about-us-wrapper {
+  display: flex;
+  background: #f5f5f7;
+  margin-bottom: 8em;
+}
+
+.about-us-left {
+  width: 40%;
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-us-left h1 {
+  font-size: 2em;
+  margin: 0;
+  font-weight: 900;
+}
+
+.about-us-left pre {
+  line-height: 2em;
+  margin-top: 24px;
+  font-weight: 400;
+}
+
+.about-us-left .btn {
+  margin-top: 25px;
+  width: 140px;
+}
+
+.about-us-right {
+  width: 60%;
+}
+
+.about-us-right img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1c1d20;
+  color: white;
+  padding: 16px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background: #39393b;
+  box-shadow: 0 0 20px rgb(0 0 0 / 12%);
+}
+
+.services {
+  margin-top: 5em;
+  color: black;
+  width: 70%;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-around;
+}
+
+.services h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  margin-bottom: 1.3em;
+}
+
+.services h3 {
+  margin-bottom: 1em;
+  font-weight: 1000;
+  font-size: 1.5em;
+}
+.services pre {
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+.pre-1 {
+  padding-right: 2em;
+}
+
+.design {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  width: 50%;
+  height: 500px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.design .box1-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 3em;
+}
+
+.design .box1-left h1 {
+  font-size: 3em;
+  padding-top: 2em;
+  font-weight: 500;
+}
+.design .box1-left p {
+  margin-top: 2em;
+  font-weight: 300;
+  margin-bottom: 1.5em;
+}
+
+.design .box1-left .button {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  background: black;
+  color: white;
+  padding: 20px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.design .box1-left .button:hover {
+  opacity: 0.8;
+}
+
+.design .box2-right {
+  width: 60%;
+}
+
+.design .box2-right img {
+  height: 100%;
+  width: 100%;
+}
+
+.studio-h1 {
+  margin-top: 200px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.studio-service {
+  background-color: white;
+  width: 50%;
+  height: 700px;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+}
+
+.studio-service .studio-left {
+  width: 55%;
+  height: 100%;
+}
+
+.studio-service .studio-left img {
+  width: 100%;
+  height: 100%;
+}
+
+.studio-right {
+  width: 45%;
+}
+
+.studio-service .box2 {
+  border-width: 1px;
+  border-color: rgb(235, 235, 235);
+  background-color: rgb(255, 255, 255);
+  height: 33.15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom-style: solid;
+}
+
+.studio-service .box2 h1 {
+  font-size: 1.4em;
+  padding-left: 1.3em;
+}
+
+.studio-right .box-ici {
+  padding-top: 8px;
+  font-size: 0.9em;
+}
+
+.studio-right .read {
+  padding-top: 1em;
+  font-weight: bold;
+  padding-left: 1.5em;
+}
+
+.learn-more-button {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3em;
+}
+
+.learn-more-button p {
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  padding: 15px;
+  width: 120px;
+  margin-bottom: 10em;
+}
+
+.learn-more-button p:hover {
+  opacity: 0.7;
+}
+
+.box2 h1 {
+  font-size: 2em;
+}
+
+.box-ici {
+  padding: 2em;
+}
+
+.read {
+  border-width: 1px;
+  color: black;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 5px;
+  display: flex;
+  padding-left: 20px;
+}
+
+.read:hover {
+  opacity: 0.5px;
+}
+
+.fact {
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.fact .title h3 {
+  margin-bottom: 1em;
+}
+
+.fact .title h2 {
+  font-size: 2em;
+  font-weight: bold;
+  width: 50%;
+}
+
+.sub {
+  margin-top: 1em;
+  display: flex;
+}
+
+.name {
+  margin-top: 2em;
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10em;
+}
+
+.design-h1 {
+  text-align: center;
+  font-size: 2em;
+  display: flex;
+}
+
+.interior {
+  padding: 0 16px;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.interior ul {
+  list-style-type: none;
+  display: inline-block;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.interior .design-h1 {
+  margin-top: 1em;
+  justify-content: center;
+  font-weight: 200;
+  margin-bottom: 0.5em;
+  font-size: 2.3em;
+}
+
+.interior ul li {
+  margin-top: 30px;
+  margin-bottom: 5em;
+}
+
+.interior div ul li a {
+  color: black;
+  text-decoration: none;
+  margin: 8px;
+  padding: 0px 15px;
+}
+
+.interior-image {
+  margin-top: 30px;
+  margin-bottom: 24px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.excerpt {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.excerpt h1 {
+  font-size: 6em;
+  text-align: center;
+  align-items: center;
+}
+
+.excerpt-p {
+  width: 30%;
+  margin-bottom: 10em;
+  opacity: 0.7;
+  justify-content: center;
+  align-items: center;
+}
+
+.footr h4 {
+  color: white;
+}
+
+.footr {
+  color: white;
+  background-color: rgb(28, 28, 31);
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  width: 100%;
+}
+
+.footr h4 {
+  margin-bottom: 10px;
+}
+
+.footr ul li {
+  list-style-type: none;
+  color: white;
+
+  font-size: 1em;
+}
+
+.footr ul li a {
+  color: white;
+  text-decoration: none;
+}
