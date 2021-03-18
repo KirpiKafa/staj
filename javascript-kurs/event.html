@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Javascript</title>
+
+</head>
+<style>
+    .header{
+        background: red;
+        font-size: 1.5em;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    .container{
+        text-align: center;
+        font-size: 3em;
+    }
+</style>
+
+<body>
+
+    <div class="header">
+        <h1>
+            Javascript Öğreniyorum
+        </h1>
+    </div>
+<hr>
+<div class="container">
+
+<!--<button onclick="tikla()">Tıkla</button>
+-->
+<!--<button onclick="this.innerHTML = 'Butona Tıklandı'">Tıkla</button>
+-->
+
+<!--<button onclick="tikla(this)">Tıkla</button>
+-->
+
+
+<p id="para1">Paragraf 1</p>
+
+<!--<button onclick="renkDegistir()">Tıkla</button>
+-->
+
+<button onmouseover="mouseover()" onmouseout="mouseout()" >Tıkla</button>
+</div>
+
+<script>
+
+/*function tikla(){
+    alert("Butona Tıklandı")
+}*/
+
+/*function tikla (element){
+    element.innerHTML = "Butona Tıklandı";
+
+}*/
+
+
+/*
+get.elementbyclass seçersek eğer class ismine göre işlem yapar.
+
+function renkDegistir(){
+    var element = document.getElementById("para1");
+    element.style.color= "blue";
+}
+*/
+
+function mouseover(){
+    var element= document.getElementById("para1");
+    element.innerHTML= "Mouse Over Effecti";
+
+}
+
+function mouseout(){
+    var element= document.getElementById("para1");
+    element.innerHTML= "Mouse Out Effecti ";
+}
+
+
+
+</script>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>
