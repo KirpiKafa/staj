@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <!--
+            Uygulama:
+
+            Girilen doğum yılına göre ehliyet 
+            alınıp alınamayacağını hesaplayınız. 
+            Eğer 18yaşından küçükse kaç yıl 
+            kalmıştır çıktısını verecek.
+        -->
+
+
+    <script>
+
+      var dogum = prompt("Doğum Yılı Giriniz: ");
+      var yil = prompt("Şuan Hangi Yıldayız? : ");
+      var yas= yil - dogum;
+
+      if(yas<18){
+          console.log("ehliyet alamazsınız");
+          console.log("Ehliyet alabilmeniz için "+(18 - yas)+" yıl beklemelisiniz");
+
+      }
+
+       else if(yas>18) {
+          console.log("ehliyet alabilirsiniz");
+      }
+
+      else{
+          console.log("Yanlış bilgi girdiniz");
+      }
+
+
+    </script>
+  </body>
+</html>

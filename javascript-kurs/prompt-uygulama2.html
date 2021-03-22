@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Uygulama 1</title>
+  </head>
+  <body>
+    <!--Bir Öğrencinin bilgilerini alıp notunu hesaplayan programı yapalım.-->
+
+    <!--
+        **ad giriniz(name)
+        **numara giriniz(number)
+        **cinsiyet giriniz(gen)
+        **ders adı giriniz(lessen)
+        *1.sınav notu(note1)
+        **2.sınav notu(note2)
+        *ortalama hesapla ve console ekranına yazdır.
+    -->
+
+    <script>
+      var name = prompt("İsim Soyisim Giriniz: ");
+      var number = prompt("Okul Numarası Giriniz: ");
+      var gen = prompt("Cinsiyet Giriniz: ");
+      var lessen = prompt("Ders Adı Giriniz: ");
+      var note1 = prompt("1. Sınav Notunu Giriniz: ");
+      var note2 = prompt("2. Sınav Notunu Giriniz: ");
+      var average = (Number (note1) + Number (note2)) / 2;
+      alert(
+        number +
+          " numaralı " +
+          name +
+          "(" +
+          gen +
+          ") isimli öğrencinin " +
+          lessen +
+          " dersinden " +
+          note1 +
+          " 1. sınav notu " +
+          note2 +
+          " 2. sınav notu " +
+          average +
+          " dersin ortalaması "
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var marka = "mercedes";
+      var model = "cla200";
+      var otomatik = "yes";
+
+      //if/else
+
+      if (otomatik == "yes") {
+        console.log("araç otomatiktir");
+      } else {
+        console.log("araç otomatik değildir.");
+      }
+
+      otomatik = true;
+      if (otomatik) {
+        console.log(marka + " " + model + " otomatik");
+      }
+
+      //1: manuel
+      //2: otomatik
+      var vites = "1";
+
+      if (vites == "1") {
+        console.log("araç manuel");
+      } else if (vites == "2") {
+        console.log("araç otomatik");
+      } else {
+        console.log("yanlış bir değer");
+      }
+
+      //switch
+
+      vites = '3';
+      switch (vites) {
+        case "1":
+          console.log("araç manuel");
+          break;
+        case "2":
+          break;
+        default:
+          console.log("yanlış değer");
+      }
+    </script>
+  </body>
+</html>
