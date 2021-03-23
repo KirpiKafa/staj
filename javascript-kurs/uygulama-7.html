@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title> </title>
+  </head>
+
+  <body>
+    <script>
+      /*
+              login kontrolünden geçene kadar kullanıcı
+               bilgilerini kullanıcılardan isteyen döngü
+      */
+      const u_name = "admin";
+      const p_word = "12345";
+      let login = false;
+
+      while (login == false) {
+        const username = prompt("Kullanıcı Adı Giriniz:");
+        const password = prompt("Şifre Giriniz:");
+
+        if (u_name == username && p_word == password) {
+          alert("Giriş Yapıldı");
+          login = true;
+        } else {
+          console.log("Hatalı Kullanıcı Adı veya Şifre");
+        }
+      }
+    </script>
+  </body>
+</html>

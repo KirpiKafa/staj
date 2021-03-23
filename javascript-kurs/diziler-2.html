@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <script>
+            var marka = ["Mercedes", "Renault", "Toyota"];
+            var model= new Array("Cla200" ,"Symbol", "Corolla");
+
+            console.log(marka[2]);
+            console.log(model[2]);
+
+            model[0]= "Cla200";
+            console.log(model);
+            
+            var clio= ["Renault", "clio","42","true"];
+            clio.push('blue');
+            clio.pop();
+            clio.shift();
+            console.log(clio);
+
+            for (var i=0; i<marka.length; i++) 
+{
+    console.log(marka[i]);
+}
+
+if(marka.indexOf('Mercedes')!==-1){
+   alert("bulundu");
+}
+else{
+    alert("aranılan kelime bulunamadı")
+}
+        </script>
+    </body>
+</html>
