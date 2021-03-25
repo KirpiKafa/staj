@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <h1 id="title">javascript öğreniyorum</h1>
+    <h2 id="title">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, reiciendis!
+    </h2>
+    <button id="degistir">değiştir</button>
+    <p>
+      <button id="degistir2">değiştir</button>
+    </p>
+
+    <p>lorem ipsum dolor <strong> sit amet,</strong> consectetur.</p>
+
+    <ul>
+      <li>item1</li>
+      <li>item 2</li>
+      <li>item3</li>
+    </ul>
+    <script>
+      let buton = document.querySelector("#degistir");
+      let buton2 = document.querySelector("#degistir2");
+
+      var p = document.querySelector("p");
+
+      buton.addEventListener("click", function () {
+        console.log("button clicked");
+        p.textContent = "button clicked";
+      });
+
+      /*let h1=document.querySelector('#title');
+       h1.addEventListener('click',function(){
+            h1.style.color='red';
+        });
+        */
+
+      let h1 = document.querySelector("#title");
+      h1.addEventListener("click", changeColor);
+      buton2.addEventListener("click", changeColor);
+      function changeColor() {
+        h1.style.color = "red";
+      }
+
+      //her iki yöntemde çalışıyor fakat daha temiz kod olması için
+      //fonksiyon oluşturup işlemlere onu tanımlıyoruz.
+
+
+
+      //genel li hepsine aynı özellik
+      /*var ul = document.querySelector('ul');
+      ul.addEventListener('click',function(){
+          alert('ul clicked');
+      })*/
+
+
+
+      //her bir ul elemanına farklı özellikler verme
+
+      var li  = document.querySelectorAll('li');
+      for (var i=0; i<li.length; i++){
+          li[i]. addEventListener('click', function(){
+              alert(this.textContent);
+              this.style.color='blue';//style özellikleri verilebiliyor.
+          });
+      }
+      
+    </script>
+  </body>
+</html>

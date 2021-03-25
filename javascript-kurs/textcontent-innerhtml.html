@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title></title>
+    <style>
+      img {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">İnnerHtml ve TextContent öğreniyorum</h1>
+
+    <h2 id="baslik-2">Deneme metin</h2>
+    <p>
+      Lorem ipsum dolor sit <strong>amet consectetur </strong> adipisicing elit.
+      Maiores, voluptates.
+    </p>
+
+    <ul>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+    </ul>
+
+    <img
+      src="https://adventure.com/wp-content/uploads/2019/08/Hero-Flight-shame-Plane-over-Wellington-New-Zealand-Photo-credit-james-coleman-YFx61dtVvHA-unsplash-1920x1080.jpg"
+      alt="uçak fotoğrafı"
+    />
+
+    <script>
+      let p = document.getElementsByTagName("p")[0]; //p etiketini seçmek için kullanılır
+      
+      p.textContent='Uygulamaları javascript öğreniyorum'
+
+      console.log(p);
+      console.log(p.textContent); // sadece textcontent seçersek eğer p etiketi içerisindeki metinler gelir html kodları console ekranına yansımaz
+      var ul = document.querySelector('ul');
+      ul.textContent='liste';//ul elemanının içerisini sildi ve sadece liste yazısını gösterdi.
+      console.log(ul);
+      console.log(ul.textContent);
+      console.log(document.body.textContent);//tüm body elemanlarını console ekranında gösterir.
+      
+    </script>
+  </body>
+</html>

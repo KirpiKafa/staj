@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title></title>
+    <style>
+      img {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">İnnerHtml ve TextContent öğreniyorum</h1>
+
+    <h2 id="baslik-2">Deneme metin</h2>
+    <p>
+      Lorem ipsum dolor sit <b>amet </b> consectetur adipisicing elit.
+      Maiores, voluptates.
+    </p>
+
+    <ul>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+    </ul>
+
+    <img
+      src="https://adventure.com/wp-content/uploads/2019/08/Hero-Flight-shame-Plane-over-Wellington-New-Zealand-Photo-credit-james-coleman-YFx61dtVvHA-unsplash-1920x1080.jpg"
+      alt="uçak fotoğrafı"
+    />
+
+    <script>
+      let p = document.getElementsByTagName("p")[0]; //p etiketini seçmek için kullanılır
+      p.innerHTML='Uygulamaları <b>javascript</b> öğreniyorum'
+
+      var ul= document.querySelector('ul');
+      ul.innerHTML='<li>item1</li><li>item1</li>';
+      
+    </script>
+  </body>
+</html>

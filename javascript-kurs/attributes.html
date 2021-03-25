@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title></title>
+    <style>
+      img {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">javascript öğreniyorum</h1>
+    <h2 id="title">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quis.
+    </h2>
+
+    <a href="https://pixabay.com/tr/" target="blank">pixabay.com</a>
+    <br />
+    <hr />
+    <img
+      src="https://adventure.com/wp-content/uploads/2019/08/Hero-Flight-shame-Plane-over-Wellington-New-Zealand-Photo-credit-james-coleman-YFx61dtVvHA-unsplash-1920x1080.jpg"
+      alt="uçak fotoğrafı"
+    />
+    <img
+      src="https://media.istockphoto.com/photos/lady-with-kayak-picture-id516449022?s=612x612"
+      alt="kano fotoğrafı"
+    />
+    <script>
+      var a= document.querySelector('a');
+
+      console.log(a);
+
+        a.getAttribute('href');
+        a.setAttribute('href','https://www.instagram.com');
+
+        var img_1=document.querySelectorAll('img')[0];
+        img_1.getAttribute('src');
+        img_1.setAttribute('src','https://media.istockphoto.com/photos/new-york-cab-on-a-bridge-picture-id959149062?s=612x612');
+
+        img_2=document.querySelectorAll('img')[1];
+        img_2.getAttribute('src');
+        img_2.setAttribute('src','https://media.istockphoto.com/photos/laptop-screen-covered-by-adhesive-notes-picture-id519183570?s=612x612');
+    </script>
+  </body>
+</html>
