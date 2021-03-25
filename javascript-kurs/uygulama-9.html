@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            /*
+            bir personelin aşağıdaki bilgilerini object içinde saklayınız.
+
+            ad: Rıdvan
+            soyad: Tonbul
+            cinsiyet: Erkek
+            telefon: 0507 000 00 00
+            adres: sakarya
+            meslek: bilgisayar programcısı
+            dil:ingilizce,almanca,fransızca
+            hobiler: sinema,spor,oyun
+
+            //Bu personel kaç dil bilmektedir.
+            //bu personelin hobilerini alt alta yazdırınız.
+            //3 elemanlı bir personel listesi oluşturunuz
+
+            */
+             
+            let ridvan={
+                ad:"Rıdvan",
+                soyad:"Tonbul",
+                cinsiyet:"Erkek",
+                telefon: "0507 000 00 00",
+                adres: "sakarya",
+                meslek: "bilgisayar programcısı",
+                dil:["ingilizce","almanca","fransızca"],
+                hobiler: ["sinema","spor","oyun"]
+
+            };
+            console.log(ridvan);
+             
+            console.log(ridvan.dil.length);
+
+            ridvan.hobiler.forEach(function(hobi){
+                console.log(hobi);
+            });
+
+
+            let personel= [
+
+            {
+                ad:"Mehmet",
+                soyad:"Tonbul",
+                cinsiyet:"Erkek",
+                telefon: "0507 000 00 00",
+                adres: "sakarya",
+                meslek: "bilgisayar programcısı",
+                dil:["ingilizce","almanca","fransızca"],
+                hobiler: ["sinema","spor","oyun"]
+
+            },
+            {
+                ad:"Rıdvan",
+                soyad:"Tonbul",
+                cinsiyet:"Erkek",
+                telefon: "0507 000 00 00",
+                adres: "sakarya",
+                meslek: "bilgisayar programcısı",
+                dil:["ingilizce","almanca","fransızca"],
+                hobiler: ["sinema","spor","oyun"]
+
+            },
+            {
+                ad:"Enes",
+                soyad:"Tonbul",
+                cinsiyet:"Erkek",
+                telefon: "0507 000 00 00",
+                adres: "sakarya",
+                meslek: "bilgisayar programcısı",
+                dil:["ingilizce","almanca","fransızca"],
+                hobiler: ["sinema","spor","oyun"]
+
+            }
+
+        ];
+        personel.forEach(function(personel){
+            console.log(personel.ad+" "+personel.soyad+" " +personel.dil);
+        });
+
+        </script>
+    </body>
+</html>

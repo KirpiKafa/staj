@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            .kutu{
+                width: 100px;
+                height: 100px;
+                margin: 25px;
+                display: inline-block;
+            }
+
+            
+            #mavi{
+                background-color: blue;
+            }
+            #sarı{
+                background-color: yellow;
+            }
+            #kırmızı{
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="kutu "id="mavi"></div>
+        <div class="kutu " id="sarı"></div>
+        <div class="kutu " id="kırmızı"></div>
+        <script>
+
+            let isBlue=false;
+            var blue= document.getElementById('mavi');
+
+            setInterval(function(){
+                if(isBlue){
+                    blue.style.background='green';
+                }else{
+                    blue.style.background='blue';
+                    isBlue=true
+                }
+            },600);
+
+          </script>
+    </body>
+</html>

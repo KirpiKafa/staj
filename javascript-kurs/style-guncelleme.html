@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <style>
+      img{
+          height: 300px;
+      }
+
+      .active{
+          color: red;
+          border-width: 1px;
+          border-style: solid;
+          border-color: black;
+             
+      }
+
+      .f45{
+          font-size:45px;
+      }
+  </style>
+  <body>
+    <h1  id="baslik">Javascript Style GÜncelleme İşlemleri</h1>
+
+    <h3 id="metin">still değişikliği...</h3>
+
+    <img
+      src="https://adventure.com/wp-content/uploads/2019/08/Hero-Flight-shame-Plane-over-Wellington-New-Zealand-Photo-credit-james-coleman-YFx61dtVvHA-unsplash-1920x1080.jpg"
+      alt="uçak fotoğrafı"
+    />
+
+    <script>
+       /* var baslik= document.getElementById('baslik');
+        baslik.style.color='green';
+        baslik.style.fontSize='35px';
+        baslik.style.border='1px solid black';
+        baslik.style.padding='10px';
+*/
+        var title= document.getElementById('baslik');
+        title.classList.add('active');
+        title.classList.add('f45');
+
+        console.log(title.classList);
+
+        title.classList.remove('f45');
+        console.log(title.classList);
+
+        title.classList.toggle('f45');//eğer bir class varsa siliyor yoksa ekliyor.
+        console.log(title.classList);
+
+        title.classList.toggle('f45');
+        console.log(title.classList);
+
+
+
+    </script>
+  </body>
+</html>

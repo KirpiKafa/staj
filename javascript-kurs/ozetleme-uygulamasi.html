@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      /*
+
+            cümle özetleme uygulaması
+
+            "Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Eum explicabo, dolorum, quo accusantium vitae
+            fugiat dignissimos est doloremque ullam omnis ratione
+            aperiam possimus beatae consequuntur temporibus
+            inventore ex! Facere, nemo!"
+
+            */
+
+      var cumle = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti adipisci unde reprehenderit, consequatur nisi animi voluptatibus nesciunt similique explicabo praesentium";
+//her yerde kullanabilmek için
+
+function ozet(cumle,maxKarakter){
+      var ozetcumle = [];
+
+      if (maxKarakter > cumle.length) {
+        return cumle;
+      } else {var kelimeler = cumle.split(' ');
+
+      var toplamKarakter = 0;
+      for (var i = 0; i < kelimeler.length; i++) {
+        ozetcumle.unshift(kelimeler[i]);
+        toplamKarakter += kelimeler[i].length;
+
+        if (toplamKarakter > maxKarakter) {
+          break;
+        }
+        return ozetcumle.join(' ')+'...';
+      }
+
+      }
+    }
+     
+
+
+    console.log(ozet(cumle,5));
+    </script>
+  </body>
+</html>
