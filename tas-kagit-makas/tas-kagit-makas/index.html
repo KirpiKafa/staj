@@ -2,8 +2,10 @@
   <head>
     <title>Taş-Kağıt-Makas Oyunu</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
   </head>
   <body>
     <div class="oyun">
@@ -11,31 +13,130 @@
         <h1>Skor Tablosu</h1>
         <h2 class="durum"></h2>
         <div class="skor-ekrani">
-          <div class="oyuncu-skoru">Oyuncu<p>0</p></div>
-          <div class="pc-skor">Pc<p>0</p></div>
+          <div class="oyuncu-skoru">
+            Oyuncu
+            <p>0</p>
+          </div>
+          <div class="pc-skor">
+            Pc
+            <p>0</p>
+          </div>
         </div>
       </div>
-      <div class="button">
+      <div class="buttons">
         <button data-value="Taş">TAŞ</button>
         <button data-value="Kağıt">KAĞIT</button>
         <button data-value="Makas">MAKAS</button>
       </div>
       <div class="images">
-          <div class="oyuncu-resim">
-              <img class="animate__bounce infinite delay-5s "src="./images/left-hand-new.png" alt="taş resmi">
-          </div>
-          <div class="pc-resim">
-            <img src="./images/right-hand-new.png" alt="taş resmi">
+        <div class="oyuncu-resim">
+          <img
+            class="animate__bounce infinite delay-5s"
+            src="./images/left-hand-new.png"
+            alt="taş resmi"
+          />
+        </div>
+        <div class="pc-resim">
+          <img src="./images/right-hand-new.png" alt="taş resmi" />
         </div>
       </div>
     </div>
     <div class="modal">
-        <div class="giris-ekrani">
-            <button>
-                Oyuna Başlamak İçin Tıklayınız...
-            </button>
-        </div>
+      <div class="giris-ekrani">
+        <button>Oyuna Başlamak İçin Tıklayınız...</button>
+      </div>
     </div>
-    <script></script>
+    <script>
+      const modal = document.querySelector(".modal");
+      const modalbutton = document.querySelector(".modal button");
+      const oyun = document.querySelector(".oyun");
+      const oyuncuskor = document.querySelector(".oyuncu-skoru p");
+      const pcskor = document.querySelector(".pc-skor p");
+      const buttons = document.querySelector("buttons button");
+      const oyuncuresim = document.querySelector(".oyuncu-resim img");
+      const pcresim = document.querySelector(".pc-resim img");
+      const oyundurumu = document.querySelector(".durum");
+
+      let oyuncuskoru = 0;
+      let pcskor = 0;
+      const options = ["Taş", "Kağıt", "Makas"];
+
+      function tas() {
+        modal.classList.toggle("reveal");
+      }
+
+      modalbutton.addEventListener("click", () => {
+        modal.classList.toggle("reveal");
+        modal.style.pointerEvents = "none";
+        game.classList.toggle("reveal");
+      });
+
+      button.foreach((item) => {
+        item.addEventListener("click", (event) => {
+          const oyuncusecim = event.target.getAttribute("data-value");
+          const pcsecim = options[Math.floor(Math.random()*3)];
+          oyuncuresim.src = "./images/left-hand-new.png";
+          pcresim.src = "./images/right-hand-new.png";
+
+          oyuncuresim.classList.toggle("hareket");
+          pcresim.classList.toggle("hareket");
+          oyun.classList.toggle("disablebuttons");
+          setTimeout(() => {
+            oyuncuresim.classList.toggle("hareket");
+            pcresim.classList.toggle("hareket");
+            oyun.classList.toggle("disablebuttons");
+            oyuncuresim.src = `./images/${oyucusecim}.png`;
+            pcresim.src = `./images/${pcsecim}.png`;
+            sonuc(oyuncusecim, pcsecim);
+          }, 2000);
+        });
+      });
+
+      function game(oyuncuvalue, pcvalue) {
+        if ((oyuncuvalue, pcvalue === "Taş")) {
+          if (pcvalue === "Taş") {
+            cikti.textContent = "Berabere";
+          } else if (pcvalue === "Kağıt") {
+            cikti.textContent = "Kaybettiniz";
+            pcskor++;
+            pcskor.textContent = pcskoru;
+          } else if (pcvalue === "Makas") {
+            cikti.textContent = "Kazandınız";
+            oyuncuskor++;
+            oyuncuskor.textContent = oyuncuskoru;
+          }
+        }
+
+        if ((oyuncuvalue, pcvalue === "Kağıt")) {
+          if (pcvalue === "Taş") {
+            cikti.textContent = "Kazandınız";
+            oyuncuskor++;
+            oyuncuskor.textContent = oyuncuskoru;
+          } else if (pcvalue === "Kağıt") {
+            cikti.textContent = "Berabere";
+          } else if (pcvalue === "Makas") {
+            cikti.textContent = "Kaybettiniz";
+            pcskor++;
+            pcskor.textContent = pcskoru;
+          }
+        }
+
+        if ((oyuncuvalue, pcvalue === "Makas")) {
+          if (pcvalue === "Taş") {
+            cikti.textContent = "Kaybettiniz";
+            pcskor++;
+            pcskor.textContent = pcskoru;
+          } else if (pcvalue === "Kağıt") {
+            cikti.textContent = "Kazandınız";
+            oyuncuskor++;
+            oyuncuskor.textContent = oyuncuskoru;
+          } else if (pcvalue === "Makas") {
+            cikti.textContent = "Berabere";
+          }
+        }
+      }
+
+      startgame;
+    </script>
   </body>
 </html>

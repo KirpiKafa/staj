@@ -1,166 +1,141 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  height: 100em;
-  background: rgb(166, 74, 231);
-  overflow: none;
-}
-
-.oyun {
-  height: 100em;
-  opacity: 1;
-  transition: opacity 0.8s ease-in;
-}
-
-h1 {
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  font-size: 3rem;
-}
-
-.skor {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 30vh;
-  width: 40vw;
-  margin: 50px auto;
-  color: white;
-  font-size: 2em;
-  background-color: rgba(138, 18, 138, 0.4);
-  border-radius: 20px;
-}
-
-.skor-ekrani {
-  width: 40vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.oyuncu-skoru{
-    text-align: center;
-}
-
-.pc-skor{
-    text-align: center;
-}
-p{
-    margin-top: 20px;
-    font-size: 1.5em;
-}
-
-.button{
-    height: 10vh;
-    width: 50vw;
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-around;
-}
-
-button:hover{
-    background: rgb(209, 201, 201);
-}
-
-button{
-    background: none;
-    border-width: 1px;
-    border-style: solid;
-    border-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100em;
+    background: rgb(166, 74, 231);
+    overflow: none;
+  }
+  
+  .oyun {
+    height: 100em;
+    opacity: 1;
+    transition: opacity 0.8s ease-in;
+  }
+  
+  h1 {
     color: white;
-    padding: 1em 2em;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background 0.8s ease;
-    outline: none;
-}
-
-.images{
+    text-align: center;
+    padding: 2rem;
+    font-size: 3rem;
+  }
+  
+  .skor {
     display: flex;
-    justify-content: space-evenly;
-    height: 20vh;
-    width: 20vw;
-    margin: 0 auto;
-}
-
-img{
-    height: 300px;
-}
-.pc-resim{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    width: 40vw;
+    margin: 50px auto;
+    color: white;
+    font-size: 2em;
+    background-color: rgba(138, 18, 138, 0.4);
+    border-radius: 20px;
+  }
+  
+  .skor-ekrani {
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .oyuncu-skoru{
+      text-align: center;
+  }
+  
+  .pc-skor{
+      text-align: center;
+  }
+  p{
+      margin-top: 20px;
+      font-size: 1.5em;
+  }
+  
+  .buttons{
+      height: 10vh;
+      width: 50vw;
+      display: flex;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: space-around;
+  }
+  
+  buttons:hover{
+      background: rgb(209, 201, 201);
+  }
+  
+  button{
+      background: none;
+      border-width: 1px;
+      border-style: solid;
+      border-color: white;
+      color: white;
+      padding: 1em 2em;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.8s ease;
+      outline: none;
+  }
+  
+  .images{
+      display: flex;
+      justify-content: space-evenly;
+      height: 20vh;
+      width: 20vw;
+      margin: 0 auto;
+  }
+  
+  img{
+      height: 300px;
+  }
+  pc-resim{
     transform: rotateY(180deg);
 }
 
-.modal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    background-color: rgba(0,0,0, 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: opacity 0.8s ease-in;
-    pointer-events: all;
-
-}
-
-.modal-button{
-    font-size: 2em;
-    
-}
-
-.reveal{
-    opacity: 1;
-}
-
-.disabledbuttons{
-    pointer-events: none;
-}
-
-.hareket{
-    animation: animation 0.3s ease-in-out infinite alternate;
-}
-
-@keyframes animation {
-    from{
-        transform: translateY(50px);
-    }
-    to {
-        transform: translateY(0px);
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .modal{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      background-color: rgba(0,0,0, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: opacity 1s ease-in;
+      pointer-events: all;
+  
+  }
+  
+  .modal button{
+      font-size: 2em;
+      
+  }
+  
+  .reveal{
+      opacity: 1;
+  }
+  
+  .disabledbuttons{
+      pointer-events: none;
+  }
+  
+  .hareket{
+      animation: animation 0.3s ease-in-out infinite alternate;
+  }
+  
+  @keyframes animation {
+      from{
+          transform: translateY(50px);
+      }
+      to {
+          transform: translateY(0px);
+      }
+  }
+  
