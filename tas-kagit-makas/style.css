@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(161, 50, 161);
+  overflow: hidden;
+}
+
+.game {
+  height: 10vh;
+  opacity: 0;
+  transition: opacity 0.8s ease-in;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.score {
+  height: 10em;
+  width: 40vw;
+  margin: 1.5em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  background: rgba(138, 18, 138, 0.4);
+  border-radius: 20px;
+}
+
+.display-score {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.player-score {
+  width: 50%;
+
+  text-align: center;
+}
+
+.computer-score {
+  width: 50%;
+  text-align: center;
+}
+p {
+  margin-top: 20px;
+  font-size: 3rem;
+}
+.buttons {
+  width: 60%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+}
+.buttons button {
+  color: white;
+  width: 20%;
+  background: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.5s ease;
+  outline: none;
+}
+button {
+  color: white;
+  background: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.5s ease;
+  outline: none;
+}
+button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+.images {
+  height: 10em;
+  width: 15em;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+img {
+  height: 20em;
+}
+
+.computer-image {
+  transform: rotateY(180deg);
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transform: opacity 0.8s ease-in;
+  pointer-events: all;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar ul li {
+  margin: 20px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.modal button {
+  font-size: 4rem;
+}
+.modalpopup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20em auto;
+}
+
+.reveal {
+  opacity: 1;
+}
+
+.disablebuttons {
+  pointer-events: none;
+}
+
+.move {
+  animation: animation 0.3s ease-in-out infinite alternate;
+}
+
+@keyframes animation {
+  from {
+    transform: translateY(50px);
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateY(50px);
+    transform: translateY(50px);
+  }
+}
+
