@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title> </title>
+
+    <style>
+      h1 {
+        border-width: 1px;
+        font-size: 2.5em;
+        background-color: red;
+        border-style: solid;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>
+      Integer olarak merdivenin kaç basamaklı olacağını alıp console'a merdiveni
+      yazdıran fonksiyonu yazın.
+    </h1>
+
+    <script>
+
+    let a=prompt("Değer Giriniz: ");
+    
+    let sonuc = ''
+    
+    for (let i = 0; i<a; i++) {
+    
+       //bosluk
+        for (let b = a; b> i; b--) {
+            sonuc += ''
+        }
+        
+        for (let k =0; k <= i; k++) {
+            sonuc += '#'
+        }
+        // yeni satır
+        sonuc += "\n"
+       
+    }
+    console.log(sonuc);
+
+    
+    </script>
+  </body>
+</html>

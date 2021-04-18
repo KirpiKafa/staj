@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <title></title>
+    <style>
+section{
+    background-color: rgb(201, 201, 201);
+}
+.sec-1{
+    text-align: center;
+    align-items: center;
+}
+.kontroconst{
+    margin-top: 5px;
+}
+.sec-2{
+    text-align: center;
+    align-items: center;
+}
+
+.temizle{
+    margin-top: 5px;
+    
+}
+h1{
+    margin-bottom: 2.5em;
+    font-size: 2.5em;
+    text-align: center;
+    border-width: 0px;
+    border-radius: 3em;
+    background-color: red;
+    border-style: solid;
+}
+img{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+    </style>
+  </head>
+  <body>
+      <h1>
+          Vücut Kitle İndeks Hesaplama
+      </h1>
+<section class="sec-1">
+    <div>
+    <form name="islemform">
+        Kilo(kg): <input class="kilo" type="text" name="kilo" size="10" /><br />
+        Boy(cm): <input class="boy" type="text" name="boy" size="10" /><br />
+        <input class="kontroconst" type="button" value="Kontrol Et" onClick="hesapla()" /><br />
+    </div>
+    </section>
+    <section class="sec-2">
+        <div>
+        Vücut Kitle Endeksiniz:
+        <input class="indeks" type="text" name="indeks" size="10" /><br />
+        Sonuca Göre: <input class="sonuc" type="text" name="islemsonucu" size="25" /><br />
+        <input class="temizle" type="reset" value="Temizle" />
+    </div>
+    </form>
+     
+</section>
+    <img class="fotograf-1" src="./images/vki.jpg" alt="vücut kitle indeks">
+
+    <script>
+      function hesapla() {
+        const kilo = document.islemform.kilo.value;
+        const boy = document.islemform.boy.value;
+        if (kilo > 0 && boy > 0) {
+          const sonuc = kilo / (((boy / 100) * boy) / 100);
+          document.islemform.indeks.value = sonuc;
+          if (sonuc < 18.5) {
+            document.islemform.islemsonucu.value = "Zayıfsınız";
+          } 
+          if (sonuc > 18.5 && sonuc < 25) {
+            document.islemform.islemsonucu.value = "Gayet Sağlıklı.";
+          }
+          if (sonuc > 25) {
+            document.islemform.islemsonucu.value = "Kilo Vermeniz Gerekiyor.";
+          }
+        } 
+        else {
+          alert("Yanlış değer girdiniz lütfen tekrar deneyiniz.");
+        }
+      }
+    </script>
+  </body>
+</html>

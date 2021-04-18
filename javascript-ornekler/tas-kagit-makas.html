@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+
+
+// ihtimaller
+// Kağıt vs taş kağıt kazanır
+// taş vs makas taş kazanır
+// makas vs kağıt makas kazanır
+var kullanici_win = 0;
+var sonuc=0;
+
+
+
+    var kullanici_sec = (prompt("Taş Kağıt Makas Birini Seçiniz"));
+    var pc = Math.random(3);
+
+    if (pc <= (1/3)){
+       pc_sec = "Taş";
+    }
+    else if (pc  <=(2/3)){
+       pc_sec = "Kağıt";
+    }
+    else if(pc  <=(3/3)){
+       pc_sec= "makas";
+    }
+
+
+
+
+    if (kullanici_sec==1){
+       if (pc_sec==="Makas"){
+            console.log("Kaybettiniz")
+        }
+        
+    }
+
+
+    if(kullanici_sec==2){
+       if (pc_sec==="Taş"){
+          console.log("Kaybettiniz")
+        }
+    }
+
+    if(kullanici_sec==3){
+       if(pc_sec==="Taş"){
+          console.log("Kaybettiniz")
+        }
+    }
+
+    
+    </script>
+  </body>
+</html>

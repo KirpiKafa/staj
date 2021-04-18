@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title></title>
+    <style>
+      .zar {
+        display: flex;
+        width: 1.5em;
+        background: #f5f5f5;
+        border: #999 1px solid;
+        padding: 10px;
+        font-size: 24px;
+        margin: 0 auto;
+        justify-content: center;
+      }
+      .oyna {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 5em;
+        justify-content: center;
+      }
+    </style>
+    <script>
+      function ZarAt() {
+        let zar1 = document.getElementById("zar1");
+        let zar2 = document.getElementById("zar2");
+        let status = document.getElementById("status");
+        let sayi1 = Math.floor(Math.random() * 6) ;
+        let sayi2 = Math.floor(Math.random() * 6) ;
+        let toplam = sayi1 + sayi2;
+        zar1.innerHTML = sayi1;
+        zar2.innerHTML = sayi2;
+        status.innerHTML = "Zarlar Toplamı = " + toplam;
+        if (sayi1 == sayi2) {
+          alert("Çift Geldi Tebrikler");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="zar" id="zar1" class="zar">0</div>
+    <div class="zar" id="zar2" class="zar">0</div>
+    <button class="oyna" onclick="ZarAt()">Zar At</button>
+    <h2 id="status" style="clear: left"></h2>
+  </body>
+</html>
