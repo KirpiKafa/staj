@@ -1,44 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
+  <head>
+    <title></title>
 
+    <style>
+      .para {
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        line-height: 1.5em;
+      }
+      .para1::first-line {
+        color: red;
+      }
 
-<style>
-	.para{
-		font-size: 1.5em;
-		letter-spacing: 2px;
-		line-height: 1.5em;
-	}
-.para1::first-line{
-	color: red;
+      .para1::first-letter {
+        color: blue;
+        font-size: 50px;
+      }
 
-}
+      .para1::after {
+        content: "paragraf sonrası";
+        content: url();
+      }
 
-.para1::first-letter{
-	color: blue;
-	font-size: 50px;
-}
-
-.para1::after{
-	content: "paragraf sonrası";
-content: url();
-}
-
-.para1::before{
-	content: "paragraf öncesi";
-}
-
-</style>
-
-
-
-</head>
-<body>
-
-
-<p class="para1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</p>
-
-
-</body>
+      .para1::before {
+        content: "paragraf öncesi";
+      }
+    </style>
+  </head>
+  <body>
+    <p class="para1">
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+      doloremque laudantium, totam rem aperiam, eaque ipsa
+    </p>
+  </body>
 </html>

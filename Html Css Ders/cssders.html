@@ -1,97 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>css ders</title>
-<style>
-/* Tüm H1 Leri Seç 
+  <head>
+    <title>css ders</title>
+    <style>
+      /* Tüm H1 Leri Seç*/
 
-h1{
-	color: blue;
-	background: red;
-}
+      h1 {
+        color: blue;
+        background: red;
+      }
 
-p{
-	color: red;
-	background: blue;
-} 
+      p {
+        color: red;
+        background: blue;
+      }
 
+      #logo {
+        color: blue;
+        background: red;
+      }
+
+      .info {
+        color: blue;
+        background: red;
+      }
+
+      #logo,
+      .lead {
+        color: blue;
+        background: red;
+      }
+
+      altı çizgili kaldırıyor a {
+        text-decoration: none;
+      }
+
+      /* ul nin içindeki a etiketini çekiyor
 */
-/*
-#logo{
-	color: blue;
-	background: red;
-}
+      ul li a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
 
-.info{
-	color: blue;
-	background: red; 
-}
-*/
-/*
-#logo, .lead{
-	color: blue;
-	background: red;
-}*/
+  <body>
+    <header>
+      <h1>Header 1</h1>
+      <h1 id="logo">Logo</h1>
 
-/* altı çizgili kaldırıyor
-a{
-	text-decoration: none;
-}
+      <ul>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+      </ul>
+    </header>
 
-*/
+    <h1>Header2</h1>
 
+    <p class="lead info">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley
+    </p>
 
-/* ul nin içindeki a etiketini çekiyor
-ul li a{
-	text-decoration: none;
-}
-*/
+    <p class="info">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley
+    </p>
 
+    <p class="info">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley
+    </p>
 
+    <p>Test Paragraf</p>
 
-
-</style>
-
-
-
-</head>
-
-<body>
-
-<header>
-	<h1>Header 1</h1>
-	<h1 id="logo">Logo</h1>
-
-	<ul>
-		<li>
-			<a href="#">Contact</a>
-		</li>
-		<li>
-			<a href="#">Services</a>
-		</li>
-
-	</ul>
-
-
-</header>
-
-<h1>Header2</h1>
-
-<p class="lead info">
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-</p>
-
-<p class="info">
-	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-</p>
-
-<p class="info">
-	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-</p>
-
-<p>Test Paragraf</p>
-
-<a href="#">Home</a>
-
-</body>
+    <a href="#">Home</a>
+  </body>
 </html>

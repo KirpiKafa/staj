@@ -19,28 +19,23 @@
     </h1>
 
     <script>
+      let a = prompt("Değer Giriniz: ");
 
-    let a=prompt("Değer Giriniz: ");
-    
-    let sonuc = ''
-    
-    for (let i = 0; i<a; i++) {
-    
-       //bosluk
-        for (let b = a; b> i; b--) {
-            sonuc += ''
+      let sonuc = "";
+
+      for (let i = 0; i < a; i++) {
+        //bosluk
+        for (let b = a; b > i; b--) {
+          sonuc += "";
         }
-        
-        for (let k =0; k <= i; k++) {
-            sonuc += '#'
+
+        for (let k = 0; k <= i; k++) {
+          sonuc += "#";
         }
         // yeni satır
-        sonuc += "\n"
-       
-    }
-    console.log(sonuc);
-
-    
+        sonuc += "\n";
+      }
+      console.log(sonuc);
     </script>
   </body>
 </html>

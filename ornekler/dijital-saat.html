@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <title></title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      #saat-tablo {
+        text-align: center;
+        width: 50%;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+      }
+
+      #saat h2 {
+        font-size: 3em;
+      }
+      .saat-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      }
+      .saat-item {
+        font-family: 'Orelega One', cursive;
+        width:  100%;
+        background-color: white;
+        color: black;
+        border-radius: 15px;
+        margin-right: 5px;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        font-size: 3em;
+      }
+      #tarih{
+          font-family: 'Coda Caption', sans-serif;
+          font-size: 1.5em;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  </head>
+  <body>
+    <div id="saat-tablo">
+      <h2>Dijital Saat</h2>
+      <div class="saat-container">
+        <div class="saat-item">
+          <p id="saat">00</p>
+        </div>
+        <div class="saat-item">
+          <p id="dakika">00</p>
+        </div>
+        <div class="saat-item">
+          <p id="saniye">00</p>
+        </div>
+      </div>
+      <p id="tarih"></p>
+    </div>
+    <script>
+        function dijital() {
+          let anlik = new Date();
+          let saat = anlik.getHours();
+          let dakika = anlik.getMinutes();
+          let saniye = anlik.getSeconds();
+          let gün = anlik.getDate();
+          let ay = anlik.getMonth();
+          let yil = anlik.getUTCFullYear();
+
+          (saat<10)? document.getElementById("saat").innerText ="0"+saat:
+                document.getElementById("saat").innerText =saat;
+                
+        (dakika<10)? document.getElementById("dakika").innerText ="0"+ dakika:
+            document.getElementById("dakika").innerText = dakika;
+
+        (saniye<10)?document.getElementById("saniye").innerText ="0"+ saniye:
+          document.getElementById("saniye").innerText = saniye;
+        
+          (gün<10)?document.getElementById("tarih").innerText="0"+gün+":0"+ay+":0"+yil:
+     document.getElementById("tarih").innerText=gün+":"+ay+":"+yil;
+     (ay<10)?document.getElementById("tarih").innerText=gün+":0"+ay+":"+yil:
+     document.getElementById("tarih").innerText=gün+":"+ay+":"+yil;
+
+      }
+setInterval(
+    function(){
+        dijital();
+    },1000
+)
+        dijital();
+    </script>
+  </body>
+</html>

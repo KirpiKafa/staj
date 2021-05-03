@@ -1,66 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Javascript</title>
-
-</head>
-<style>
-    .header{
-        background: red;
-        font-size: 1.5em;
-        text-align: center;
-        font-family: sans-serif;
+  </head>
+  <style>
+    .header {
+      background: red;
+      font-size: 1.5em;
+      text-align: center;
+      font-family: sans-serif;
     }
-    .container{
-        text-align: center;
-        font-size: 3em;
+    .container {
+      text-align: center;
+      font-size: 3em;
     }
-</style>
+  </style>
 
-<body>
-
+  <body>
     <div class="header">
-        <h1>
-            Javascript Öğreniyorum
-        </h1>
+      <h1>Javascript Öğreniyorum</h1>
     </div>
-<hr>
-<div class="container">
+    <hr />
+    <div class="container"></div>
 
-</div>
+    <script>
+      function Calisan(isim, soyisim, numara) {
+        this.isim = isim;
+        this.soyisim = soyisim;
+        this.numara = numara;
+        this.bilgilerigoster = function () {
+          return (
+            "İsim: " +
+            this.isim +
+            "\nSoyisim: " +
+            this.soyisim +
+            "\nNumara: " +
+            this.numara
+          );
+        };
+      }
 
-<script>
+      var calisan1 = new Calisan("Rıdvan", "Tonbul", "123456");
+      var calisan2 = new Calisan("Merve", "Dal", "1234456");
 
-function Calisan(isim,soyisim,numara){
-    this.isim= isim;
-    this.soyisim=soyisim;
-    this.numara=numara;
-    this.bilgilerigoster=function(){
-        return "İsim: " +this.isim + "\nSoyisim: " + this.soyisim + "\nNumara: " + this.numara;
-
-    }
-}
-
-var calisan1= new Calisan ("Rıdvan", "Tonbul", "123456");
-var calisan2= new Calisan ("Merve", "Dal", "1234456");
-
-console.log(calisan1.bilgilerigoster());
-console.log(calisan2.bilgilerigoster());
-
-
-</script>
-
-
-
-
-
-</body>
-
-
-
-
-
-
+      console.log(calisan1.bilgilerigoster());
+      console.log(calisan2.bilgilerigoster());
+    </script>
+  </body>
 </html>
